@@ -1,4 +1,7 @@
 import { motion } from "motion/react";
+import martinaImg from "../assets/images/martina.png";
+import marianeImg from "../assets/images/mariane.png";
+import micheleImg from "../assets/images/michele.png";
 
 export default function Hosts() {
   const hostList = [
@@ -6,6 +9,7 @@ export default function Hosts() {
       name: "Martina Bugs",
       specialty: "Executiva do Mercado de Luxo & Gestão de Pessoas",
       brands: ["Burberry (Brand Manager)", "Louis Vuitton", "Trussardi", "Thierry Mugler"],
+      photo: martinaImg,
       bio: [
         "Executiva do mercado de luxo há mais de 30 anos, formada em moda e gestão de pessoas. Gerenciou as marcas Trussardi e Thierry Mugler. Na Louis Vuitton atuou em compras, treinamento e capacitação das equipes Brasil, Venezuela e México. Em 2015 tornou-se Brand Manager da Burberry no Brasil, inaugurando 10 lojas próprias e liderando as equipes de NY e Londres."
       ]
@@ -14,6 +18,7 @@ export default function Hosts() {
       name: "Mariane Junqueira",
       specialty: "Conselheira & Diretora por 13 anos na Fendi Brasil",
       brands: ["Fendi (Diretora)", "Louis Vuitton", "Baccarat", "Louboutin"],
+      photo: marianeImg,
       bio: [
         "30 anos no mercado de luxo, com passagens por Louis Vuitton, Baccarat, Louboutin e Fendi, onde foi diretora por 13 anos e liderou a marca em ciclos estratégicos (a flagship brasileira alcançou o maior crescimento das Américas em 2023). Atua como mentora, treinadora e conselheira."
       ]
@@ -22,6 +27,7 @@ export default function Hosts() {
       name: "Michele Gainzarain",
       specialty: "Posicionamento Pessoal, Auto-Imagem & Marketing",
       brands: ["Louis Vuitton", "Dolce & Gabbana", "Giorgio Armani", "Ermenegildo Zegna", "MCF Consultoria"],
+      photo: micheleImg,
       bio: [
         "Mais de 20 anos no mercado de luxo nas áreas de Marketing, VM, Produto e Cliente. Passou por Polo Ralph Lauren, Louis Vuitton (América Latina), D&G, Dolce & Gabbana, Giorgio Armani, Emporio Armani e Ermenegildo Zegna. Especialista em auto-imagem e posicionamento pessoal. 15 anos na MCF Consultoria com projetos estratégicos em varejo e lifestyle."
       ]
@@ -95,6 +101,18 @@ export default function Hosts() {
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 relative z-10">
                 {/* Visual / Left Side */}
                 <div className="lg:col-span-5 space-y-6">
+                  {/* Profile Photo */}
+                  <div className="flex justify-center lg:justify-start">
+                    <div className="relative w-36 h-36 sm:w-44 sm:h-44 rounded-full overflow-hidden border-2 border-brand-terracotta/30 shadow-xl shadow-brand-terracotta/10 group-hover:border-[#e29360]/50 transition-all duration-500">
+                      <img
+                        src={host.photo}
+                        alt={host.name}
+                        className="w-full h-full object-cover object-top"
+                      />
+                      <div className="absolute inset-0 rounded-full ring-1 ring-inset ring-white/10" />
+                    </div>
+                  </div>
+
                   <div className="space-y-3">
                     <div className="flex items-center gap-3">
                       <span className="font-serif italic text-xl md:text-2xl text-[#e29360] font-semibold">0{index + 1}.</span>

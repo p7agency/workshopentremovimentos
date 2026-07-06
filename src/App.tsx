@@ -13,7 +13,7 @@ export default function App() {
   const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
 
   const handleOpenCheckout = () => {
-    setIsCheckoutOpen(true);
+    window.open("https://pay.kiwify.com.br/2lXVAzc", "_blank");
   };
 
   const handleCloseCheckout = () => {
