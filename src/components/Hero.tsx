@@ -13,20 +13,20 @@ export default function Hero({ onOpenCheckout }: HeroProps) {
       <div className="absolute top-1/2 left-[-10%] w-[500px] h-[500px] bg-brand-terracotta/10 rounded-full blur-[140px] pointer-events-none z-0" />
 
       <div className="max-w-7xl mx-auto w-full relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div className="flex flex-col items-center">
           
-          {/* Text & Action Panel Left */}
-          <div className="lg:col-span-12 text-left space-y-8 flex flex-col justify-center max-w-4xl">
+          {/* Text & Action Panel — Centered */}
+          <div className="text-center space-y-6 sm:space-y-8 flex flex-col items-center justify-center max-w-3xl">
             
             {/* Elegant Header/Date Badge */}
             <motion.div
               initial={{ opacity: 0, y: -15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="inline-flex items-center gap-3 bg-brand-terracotta/20 border border-brand-terracotta/35 px-4 py-2 rounded-xs self-start"
+              className="inline-flex items-center gap-2 sm:gap-3 bg-brand-terracotta/20 border border-brand-terracotta/35 px-3 sm:px-4 py-2 rounded-xs"
             >
               <span className="w-2 h-2 rounded-full bg-brand-terracotta animate-ping shrink-0" />
-              <span className="font-sans font-bold text-xs sm:text-sm tracking-[0.2em] text-[#fbd7cd] uppercase">
+              <span className="font-sans font-bold text-[10px] sm:text-xs md:text-sm tracking-[0.15em] sm:tracking-[0.2em] text-[#fbd7cd] uppercase">
                 Entre Movimentos — A Gestão da Experiência do Cliente
               </span>
             </motion.div>
@@ -36,7 +36,7 @@ export default function Hero({ onOpenCheckout }: HeroProps) {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
-              className="font-serif text-3.5xl sm:text-4.5xl md:text-5xl lg:text-6xl font-light text-brand-offwhite leading-[1.15] tracking-tight max-w-2xl"
+              className="font-serif text-2.5xl sm:text-3.5xl md:text-5xl lg:text-6xl font-light text-brand-offwhite leading-[1.15] tracking-tight"
             >
               Alinhe a comunicação, gestão e atendimento para que sua marca seja escolhida pelo que representa, <span className="italic font-normal text-brand-terracotta">não pelo que custa</span>.
             </motion.h1>
@@ -46,31 +46,21 @@ export default function Hero({ onOpenCheckout }: HeroProps) {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.25 }}
-              className="font-serif italic text-base sm:text-lg md:text-xl text-[#cdbeaf] max-w-xl font-light leading-relaxed"
+              className="font-serif italic text-sm sm:text-base md:text-lg lg:text-xl text-[#cdbeaf] max-w-xl font-light leading-relaxed"
             >
               Uma imersão profunda com três especialistas do mercado de luxo para desenhar a coerência interna que multiplica o seu valor de mercado.
             </motion.p>
 
-            {/* Seção de datas (nova, com as duas opções) */}
+            {/* Datas disponíveis — texto simples, sem aparência de botão */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="space-y-3 pt-6 border-t border-brand-greige/10 max-w-md"
+              className="pt-4 sm:pt-6"
             >
-              <span className="font-sans text-xs sm:text-sm tracking-widest text-[#e29360] uppercase block font-bold">
-                Escolha a data que melhor se encaixa na sua agenda:
-              </span>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="border border-brand-terracotta/30 bg-[#35281d]/50 p-4 rounded-xs">
-                  <span className="font-sans font-bold text-[10px] text-brand-terracotta tracking-wider uppercase block mb-1">Opção 1</span>
-                  <p className="font-serif text-base sm:text-lg text-brand-offwhite font-light">11 de agosto</p>
-                </div>
-                <div className="border border-brand-terracotta/30 bg-[#35281d]/50 p-4 rounded-xs">
-                  <span className="font-sans font-bold text-[10px] text-brand-terracotta tracking-wider uppercase block mb-1">Opção 2</span>
-                  <p className="font-serif text-base sm:text-lg text-brand-offwhite font-light">14 de agosto</p>
-                </div>
-              </div>
+              <p className="font-sans text-xs sm:text-sm tracking-wider text-[#cdbeaf]/80 uppercase">
+                Duas datas disponíveis: <span className="text-brand-offwhite font-medium">11 de agosto</span> <span className="text-brand-terracotta/50 mx-1">ou</span> <span className="text-brand-offwhite font-medium">14 de agosto</span>
+              </p>
             </motion.div>
 
             {/* Call To Action Buttons */}
@@ -78,7 +68,7 @@ export default function Hero({ onOpenCheckout }: HeroProps) {
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full pt-4"
+              className="flex flex-col sm:flex-row items-center gap-4 pt-4"
             >
               <button
                 onClick={onOpenCheckout}
@@ -94,7 +84,7 @@ export default function Hero({ onOpenCheckout }: HeroProps) {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.5 }}
-              className="flex flex-wrap items-center gap-y-3 gap-x-6 text-[13px] sm:text-sm md:text-base font-sans text-brand-greige pt-6 w-full max-w-xl"
+              className="flex flex-wrap items-center justify-center gap-y-3 gap-x-4 sm:gap-x-6 text-xs sm:text-sm md:text-base font-sans text-brand-greige pt-6"
             >
               <div className="flex items-center gap-2">
                 <ShieldCheck className="w-4 h-4 text-brand-terracotta shrink-0" />
