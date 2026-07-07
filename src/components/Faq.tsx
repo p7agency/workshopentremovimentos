@@ -8,7 +8,7 @@ export default function Faq() {
   const faqs = [
     {
       q: "Qual é a forma de pagamento?",
-      a: "Você pode realizar o seu pagamento à vista via Pix (R$ 300,00) ou parcelar em até 12x de R$ 31,02 em cartões de crédito aceitos nacionalmente. Também suportamos faturamento direto caso prefira entrar em contato por nosso canal corporativo."
+      a: "Você pode realizar o seu pagamento à vista via Pix (R$ 400,00) ou parcelar em até 12x de R$ 41,37 em cartões de crédito aceitos nacionalmente. Também suportamos faturamento direto caso prefira entrar em contato por nosso canal corporativo."
     },
     {
       q: "Como funciona o acesso à gravação?",
@@ -18,18 +18,12 @@ export default function Faq() {
       q: "O workshop é ao vivo ou apenas gravado?",
       a: "O workshop é 100% ao vivo e interativo, com transmissão online e imersiva de excelência na data escolhida. Isso nos permite realizar exercícios contextualizados, dinâmicas e discussões em tempo real."
     },
-    {
-      q: "E se eu não puder participar no dia?",
-      a: "Você não perderá nada importante. A gravação do workshop será disponibilizada na íntegra, permitindo que você assista no seu próprio ritmo."
-    },
+
     {
       q: "O pagamento é seguro?",
       a: "Absolutamente. Nós utilizamos soluções de pagamento corporativas de alta tecnologia que integram criptografia ponta-a-ponta SSL, protegendo seus dados com estrita confidencialidade."
     },
-    {
-      q: "Por quanto tempo tenho acesso à gravação?",
-      a: "Você terá licença para reassistir à gravação completa pelo período de 12 meses (1 ano inteiro)."
-    }
+
   ];
 
   const toggleFaq = (index: number) => {

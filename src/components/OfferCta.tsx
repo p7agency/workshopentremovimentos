@@ -9,7 +9,7 @@ export default function OfferCta({ onOpenCheckout }: OfferCtaProps) {
   const assetsIncluded = [
     "Acesso Completo aos 03 Blocos Práticos da Imersão On-line",
     "Workshop Gravado (Bônus)",
-    "Escolha entre duas turmas disponíveis (11 ou 14 de agosto)",
+    "Duas turmas disponíveis (11 ou 14 de agosto) — após a compra, nosso time entra em contato para confirmar a sua data preferida",
     "Garantia incondicional de reembolso total de 07 dias"
   ];
 
@@ -98,10 +98,10 @@ export default function OfferCta({ onOpenCheckout }: OfferCtaProps) {
                   Por apenas:
                 </span>
                 <div className="font-serif text-4xl sm:text-5xl md:text-5.5xl font-light text-brand-offwhite tracking-tight leading-none py-1">
-                  12x <span className="text-brand-terracotta">R$ 31,02</span>
+                  12x <span className="text-brand-terracotta">R$ 41,37</span>
                 </div>
                 <span className="font-sans text-sm sm:text-base font-medium uppercase tracking-widest text-brand-offwhite block">
-                  ou R$ 300,00 à vista
+                  ou R$ 400,00 à vista
                 </span>
                 <span className="font-sans text-xs tracking-wider text-[#e29360] uppercase font-bold block pt-1.5">
                   Incluso: workshop gravado (bônus)

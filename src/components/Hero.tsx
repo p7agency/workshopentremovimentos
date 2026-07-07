@@ -61,6 +61,9 @@ export default function Hero({ onOpenCheckout }: HeroProps) {
               <p className="font-sans text-xs sm:text-sm tracking-wider text-[#cdbeaf]/80 uppercase">
                 Duas datas disponíveis: <span className="text-brand-offwhite font-medium">11 de agosto</span> <span className="text-brand-terracotta/50 mx-1">ou</span> <span className="text-brand-offwhite font-medium">14 de agosto</span>
               </p>
+              <p className="font-sans text-[11px] sm:text-xs text-[#cdbeaf]/60 mt-1.5 normal-case tracking-wide">
+                Após a compra, nosso time entra em contato para confirmar a sua data preferida.
+              </p>
             </motion.div>
 
             {/* Call To Action Buttons */}

@@ -27,10 +27,10 @@ export default function Footer({ onOpenCheckout }: FooterProps) {
             
             <div className="space-y-1.5 pt-2">
               <p className="font-serif text-2xl md:text-3xl font-light text-brand-offwhite/95">
-                12x de <span className="italic">R$ 31,02</span>
+                12x de <span className="italic">R$ 41,37</span>
               </p>
               <p className="font-sans text-xs uppercase tracking-widest text-brand-greige">
-                ou R$ 300,00 à vista
+                ou R$ 400,00 à vista
               </p>
             </div>
           </div>

@@ -8,7 +8,7 @@ export default function Hosts() {
     {
       name: "Martina Bugs",
       specialty: "Executiva do Mercado de Luxo & Gestão de Pessoas",
-      brands: ["Burberry (Brand Manager)", "Louis Vuitton", "Trussardi", "Thierry Mugler"],
+      brands: ["Burberry", "Louis Vuitton", "Trussardi", "Thierry Mugler"],
       photo: martinaImg,
       bio: [
         "Executiva do mercado de luxo há mais de 30 anos, formada em moda e gestão de pessoas. Gerenciou as marcas Trussardi e Thierry Mugler. Na Louis Vuitton atuou em compras, treinamento e capacitação das equipes Brasil, Venezuela e México. Em 2015 tornou-se Brand Manager da Burberry no Brasil, inaugurando 10 lojas próprias e liderando as equipes de NY e Londres."
@@ -17,7 +17,7 @@ export default function Hosts() {
     {
       name: "Mariane Junqueira",
       specialty: "Conselheira & Diretora por 13 anos na Fendi Brasil",
-      brands: ["Fendi (Diretora)", "Louis Vuitton", "Baccarat", "Louboutin"],
+      brands: ["Fendi", "Louis Vuitton", "Baccarat", "Louboutin"],
       photo: marianeImg,
       bio: [
         "30 anos no mercado de luxo, com passagens por Louis Vuitton, Baccarat, Louboutin e Fendi, onde foi diretora por 13 anos e liderou a marca em ciclos estratégicos (a flagship brasileira alcançou o maior crescimento das Américas em 2023). Atua como mentora, treinadora e conselheira."

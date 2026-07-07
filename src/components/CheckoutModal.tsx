@@ -178,7 +178,7 @@ export default function CheckoutModal({ isOpen, onClose }: CheckoutModalProps) {
                           : "border-transparent text-brand-brown/50"
                       }`}
                     >
-                      PIX (R$ 300,00)
+                      PIX (R$ 400,00)
                     </button>
                     <button
                       onClick={() => setPaymentMethod("card")}
@@ -228,7 +228,7 @@ export default function CheckoutModal({ isOpen, onClose }: CheckoutModalProps) {
                           Escaneie o código acima ou copie a chave Pix abaixo
                         </p>
                         <p className="text-[11px] font-sans uppercase tracking-wider text-brand-terracotta mt-1">
-                          Inscrição Completa • Total R$ 300,00 à vista
+                          Inscrição Completa • Total R$ 400,00 à vista
                         </p>
                       </div>
 
@@ -305,9 +305,9 @@ export default function CheckoutModal({ isOpen, onClose }: CheckoutModalProps) {
                           Parcelamento
                         </label>
                         <select className="w-full bg-white border border-brand-greige px-4 py-3 text-sm focus:outline-none focus:border-brand-terracotta transition-colors">
-                          <option>12x de R$ 31,02 (Total R$ 372,24)</option>
-                          <option>6x de R$ 50,00 (Sem juros)</option>
-                          <option>1x de R$ 300,00 (À vista)</option>
+                          <option>12x de R$ 41,37 (Total R$ 496,44)</option>
+                          <option>6x de R$ 66,67 (Sem juros)</option>
+                          <option>1x de R$ 400,00 (À vista)</option>
                         </select>
                       </div>
                     </div>
